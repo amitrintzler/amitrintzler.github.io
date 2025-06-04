@@ -3,108 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amit Rintzler</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Amit Rintzler - DevOps Manager</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
+        /* Base styles */
         body {
             margin: 0;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Open Sans', sans-serif;
             color: #333;
-            background: linear-gradient(145deg, #e9e9e9, #ffffff);
+            background-color: #fff;
+            line-height: 1.6;
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
         }
         .container {
             max-width: 960px;
             margin: 0 auto;
             padding: 40px 20px;
         }
-        header {
-            text-align: center;
-            padding: 100px 20px 60px;
+        h1, h2, h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        /* Hero styles */
+        .hero {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: #fff;
-            border-radius: 0 0 20px 20px;
+            padding: 60px 20px;
         }
-        header h1 {
-            font-size: 3rem;
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .hero-text {
+            max-width: 600px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
             margin-bottom: 10px;
         }
-        header p {
-            font-size: 1.25rem;
-            margin-bottom: 30px;
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .tagline {
+            margin-bottom: 20px;
+        }
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 40px;
+            border: 4px solid #fff;
         }
         .cta-button {
             display: inline-block;
             padding: 12px 28px;
-            font-size: 1rem;
             background: #fff;
             color: #764ba2;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: background 0.3s, color 0.3s;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-top: 10px;
         }
         .cta-button:hover {
             background: #764ba2;
             color: #fff;
         }
+        .social-links a {
+            color: #fff;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        /* Section styles */
         section {
             margin: 60px 0;
         }
         section h2 {
-            text-align: center;
-            margin-bottom: 20px;
             font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
             color: #764ba2;
         }
-        .highlights ul {
+        .about ul {
             list-style: none;
             padding: 0;
         }
-        .highlights li {
-            background: #f0f0f0;
-            padding: 15px 20px;
-            margin-bottom: 10px;
-            border-radius: 8px;
+        .about li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
         }
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            font-size: 0.9rem;
-            color: #666;
-        }
-        .social-links a {
-            display: inline-block;
-            margin: 0 10px;
+        .about li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
             color: #764ba2;
-            text-decoration: none;
+        }
+        .projects .project {
+            background: #f7f7f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .projects .project h3 {
+            margin-top: 0;
+        }
+        /* Contact form styles */
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact label {
+            margin-bottom: 5px;
             font-weight: 600;
+        }
+        .contact input,
+        .contact textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font: inherit;
+        }
+        .contact textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .contact button {
+            background: #764ba2;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background: #5b3f8c;
+        }
+        /* Footer styles */
+        footer {
+            background: #f0f0f0;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+        footer .social-links a {
+            color: #764ba2;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-photo {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Amit Rintzler</h1>
-        <p>Welcome to my personal site.</p>
-        <a class="cta-button" href="mailto:amitrintzler@gmail.com">Get in Touch</a>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <img src="https://via.placeholder.com/160" alt="Amit Rintzler" class="profile-photo">
+            <div class="hero-text">
+                <h1>Amit Rintzler</h1>
+                <h2>DevOps Team Leader at Amdocs</h2>
+                <p class="tagline">DevOps Manager passionate about modern CI/CD pipelines and cloud-native platforms, driving AI-driven innovation in delivery and troubleshooting.</p>
+                <a href="#contact" class="cta-button">Let's Connect</a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/amitrintzler/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/AmitRintzler" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <div class="container">
-        <section class="highlights">
-            <h2>Highlights</h2>
+    <main>
+        <!-- About Section -->
+        <section id="about" class="about container">
+            <h2>About Me</h2>
             <ul>
-                <li>Add key achievements from your LinkedIn profile here.</li>
-                <li>Share recent updates from your X feed here.</li>
+                <li>DevOps and QA Manager with extensive experience leading global teams in delivering scalable solutions.</li>
+                <li>Expert in CI/CD and cloud-native architectures, with a track record of accelerating delivery pipelines.</li>
+                <li>Advocates AI-driven automation for improving software delivery and troubleshooting processes.</li>
+                <li>Active in DevOps communities; shares insights and learning resources on LinkedIn and Twitter (e.g., daily DevOps quizzes, tutorials).</li>
             </ul>
         </section>
 
-        <section class="social-links">
-            <h2>Connect</h2>
-            <a href="#">LinkedIn</a>
-            <a href="#">X</a>
+        <!-- Projects Section -->
+        <section id="projects" class="projects container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>TradeScore Assistant</h3>
+                <p>An AI-powered trading tool that provides stock scores, real-time insights and options strategies. Built using Base44's AI platform in 2025.</p>
+            </div>
         </section>
-    </div>
 
+        <!-- Contact Section -->
+        <section id="contact" class="contact container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out using the form below.</p>
+            <form action="mailto:amitrintzler@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
     <footer>
-        &copy; 2025 Amit Rintzler
+        <p>&copy; 2025 Amit Rintzler</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/amitrintzler/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/AmitRintzler" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
     </footer>
 </body>
 </html>
