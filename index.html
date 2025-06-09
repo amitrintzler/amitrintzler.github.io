@@ -59,6 +59,21 @@
         .tagline {
             margin-bottom: 20px;
         }
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 0.15em solid #fff;
+            width: 60ch;
+            animation: typing 4s steps(60, end) forwards, blink-caret 0.75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 60ch; }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #fff; }
+        }
         .cta-button {
             display: inline-block;
             padding: 12px 32px;
@@ -177,7 +192,7 @@
         <div class="container hero-content">
             <div class="hero-text">
                 <h1>Amit Rintzler</h1>
-                <p class="tagline">DevOps Manager | Architecting Modern CI/CD &amp; Cloud-Native Platforms | Driving AI-Driven Innovation in Delivery &amp; Troubleshooting | Scalable, Developer-Centric Engineering</p>
+                <p class="tagline typewriter">DevOps Manager | Architecting Modern CI/CD &amp; Cloud Platforms</p>
                 <a href="#contact" class="cta-button">Let's Connect</a>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/amitrintzler/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
