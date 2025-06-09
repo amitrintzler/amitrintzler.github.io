@@ -82,16 +82,24 @@
             border-radius: 50px;
             font-weight: 600;
             margin-top: 10px;
-            transition: background 0.3s, color 0.3s;
+            transition: all 0.3s ease;
         }
         .cta-button:hover {
             background: #9333ea;
             color: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
         .social-links a {
+            display: inline-block;
             color: #fff;
             margin: 0 10px;
             font-size: 1.3rem;
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
         /* Section styles */
         section {
@@ -160,10 +168,12 @@
             border-radius: 4px;
             font-size: 1rem;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: all 0.3s ease;
         }
         .contact button:hover {
             background: #7e22ce;
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
         /* Footer styles */
         footer {
@@ -173,9 +183,15 @@
             font-size: 0.9rem;
         }
         footer .social-links a {
+            display: inline-block;
             color: #9333ea;
             margin: 0 10px;
             font-size: 1.3rem;
+            transition: all 0.3s ease;
+        }
+        footer .social-links a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
         /* Responsive styles */
         @media (max-width: 768px) {
