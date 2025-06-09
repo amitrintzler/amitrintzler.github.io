@@ -137,6 +137,24 @@
         .projects .project h3 {
             margin-top: 0;
         }
+        .updates {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .updates .update-card {
+            background: #f7f7f7;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .updates .update-card h3 {
+            margin-top: 0;
+        }
+        .updates .update-date {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
         /* Contact form styles */
         .contact form {
             max-width: 600px;
@@ -236,6 +254,26 @@
             <div class="project">
                 <h3>TradeScore Assistant</h3>
                 <p>An AI-powered trading tool that provides stock scores, real-time insights and options strategies. Built using Base44's AI platform in 2025.</p>
+            </div>
+        </section>
+
+        <!-- Latest Updates -->
+        <section id="updates" class="updates container">
+            <h2>Latest Updates</h2>
+            <div class="update-card">
+                <h3>Post Title One</h3>
+                <p class="update-date">Jan 1, 2025</p>
+                <p>Brief description of the first post.</p>
+            </div>
+            <div class="update-card">
+                <h3>Post Title Two</h3>
+                <p class="update-date">Feb 1, 2025</p>
+                <p>Brief description of the second post.</p>
+            </div>
+            <div class="update-card">
+                <h3>Post Title Three</h3>
+                <p class="update-date">Mar 1, 2025</p>
+                <p>Brief description of the third post.</p>
             </div>
         </section>
 
