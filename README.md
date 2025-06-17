@@ -8,3 +8,5 @@ This repository hosts Amit Rintzler's personal landing page. The site is a singl
 - Contact form for reaching out
 
 The page is responsive and designed to work well on both desktop and mobile browsers.
+
+For more on my AI projects and experiments, check out my agents hub at [friendly-agent-share.lovable.app](https://friendly-agent-share.lovable.app/), which I update periodically.
