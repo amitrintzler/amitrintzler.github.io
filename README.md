@@ -1,6 +1,6 @@
 # amitrintzler.github.io
 
-This repository hosts Amit Rintzler's personal landing page. The site is a single-page layout built with HTML5 and CSS3 and contains the following sections:
+This repository hosts the personal landing page of **Amit Rintzler**, DevOps Maestro. The site is a single-page layout built with HTML5 and CSS3 and contains the following sections:
 
 - Hero header with photo, headline and social links
 - About section highlighting experience and skills
