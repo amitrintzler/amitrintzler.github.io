@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amit Rintzler - DevOps Maestro</title>
+    <title>Amit Rintzler - DevOps &amp; Platform Engineering Manager</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <!-- Font Awesome for social icons -->
@@ -49,7 +49,7 @@
             gap: 20px;
         }
         .hero-text {
-            max-width: 700px;
+            max-width: 900px;
         }
         .hero h1 {
             font-size: 4rem;
@@ -68,12 +68,12 @@
             overflow: hidden;
             white-space: nowrap;
             border-right: 0.15em solid #fff;
-            width: 60ch;
-            animation: typing 4s steps(60, end) forwards, blink-caret 0.75s step-end infinite;
+            width: 86ch;
+            animation: typing 5s steps(85, end) forwards, blink-caret 0.75s step-end infinite;
         }
         @keyframes typing {
             from { width: 0; }
-            to { width: 60ch; }
+            to { width: 86ch; }
         }
         @keyframes blink-caret {
             from, to { border-color: transparent; }
@@ -116,6 +116,13 @@
             margin-bottom: 30px;
             color: #764ba2;
         }
+        /* About section */
+        .about p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            font-size: 1.05rem;
+            text-align: center;
+        }
         .about ul {
             list-style: none;
             padding: 0;
@@ -133,6 +140,78 @@
             left: 0;
             color: #764ba2;
         }
+        /* Experience section */
+        .experience .job {
+            border-left: 4px solid #9333ea;
+            background: #fafafa;
+            padding: 20px 24px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        .experience .job h3 {
+            margin-bottom: 4px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        .experience .job .meta {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 12px;
+        }
+        .experience .job ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .experience .job ul li {
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+        /* Skills section */
+        .skills .skill-category {
+            margin-bottom: 22px;
+        }
+        .skills .skill-category h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .skill-tag {
+            display: inline-block;
+            padding: 5px 14px;
+            border: 1.5px solid #9333ea;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            color: #9333ea;
+            background: #fff;
+            transition: all 0.2s ease;
+        }
+        .skill-tag:hover {
+            background: #9333ea;
+            color: #fff;
+        }
+        /* Education section */
+        .education .edu-card {
+            border-left: 4px solid #9333ea;
+            background: #fafafa;
+            padding: 20px 24px;
+            border-radius: 6px;
+        }
+        .education .edu-card h3 {
+            margin-bottom: 4px;
+            font-size: 1.1rem;
+        }
+        .education .edu-card .meta {
+            font-size: 0.9rem;
+            color: #888;
+        }
+        /* Projects section */
         .projects .project {
             background: #f7f7f7;
             padding: 20px;
@@ -207,6 +286,12 @@
                 flex-direction: column;
                 text-align: center;
             }
+            .typewriter {
+                white-space: normal;
+                width: auto;
+                border-right: none;
+                animation: none;
+            }
         }
     </style>
 </head>
@@ -216,10 +301,11 @@
         <div class="container hero-content">
             <div class="hero-text">
                 <h1>Amit Rintzler</h1>
-                <p class="tagline typewriter">DevOps Maestro | Architecting Modern CI/CD &amp; Cloud Platforms</p>
+                <p class="tagline typewriter">DevOps &amp; Platform Engineering Manager | Cloud, Kubernetes, CI/CD, Data &amp; AI Platforms</p>
                 <a href="#contact" class="cta-button">Let's Connect</a>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/amitrintzler/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/amit-rintzler" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/amitrintzler" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://twitter.com/AmitRintzler" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
@@ -230,12 +316,156 @@
         <!-- About Section -->
         <section id="about" class="about container">
             <h2>About Me</h2>
+            <p>DevOps and Platform Engineering Manager with over 10 years of experience designing, scaling, and operating cloud-native application, data, and AI platforms in complex enterprise environments.</p>
             <ul>
-                <li>DevOps and QA Manager with extensive experience leading global teams in delivering scalable solutions.</li>
-                <li>Expert in CI/CD and cloud-native architectures, with a track record of accelerating delivery pipelines.</li>
-                <li>Advocates AI-driven automation for improving software delivery and troubleshooting processes.</li>
-                <li>Active in DevOps communities; shares insights and learning resources on LinkedIn and Twitter (e.g., daily DevOps quizzes, tutorials).</li>
+                <li>Builds internal platforms that enable engineering, data, and AI teams to move faster through standardization, automation, and reliability engineering.</li>
+                <li>Deep hands-on and leadership experience with Kubernetes, CI/CD, streaming, data platforms, and observability supporting production-grade, mission-critical systems at scale.</li>
+                <li>Proven leader of global DevOps organizations across Israel, India, and Cyprus — owning end-to-end platform strategy, delivery, and operational excellence.</li>
+                <li>Integrates AI-assisted automation and monitoring to reduce MTTR and improve operational decision-making.</li>
             </ul>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience container">
+            <h2>Experience</h2>
+
+            <div class="job">
+                <h3>DevOps Manager – AI &amp; Data Platform</h3>
+                <div class="meta">Amdocs &nbsp;·&nbsp; Oct 2025 – Present</div>
+                <ul>
+                    <li>Own platform strategy and operational reliability for enterprise-scale AI and Data platforms.</li>
+                    <li>Lead multiple global DevOps teams supporting engineering, analytics, and AI product organizations.</li>
+                    <li>Enable production-grade streaming, analytics, and AI workloads using Kafka, Databricks, BigQuery, EMR, and Snowflake.</li>
+                    <li>Define and enforce platform standards for deployment, observability, security, and cost optimization.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Software Development Manager – DevOps, NFV &amp; Cloud Technologies</h3>
+                <div class="meta">Amdocs &nbsp;·&nbsp; Feb 2022 – Nov 2025</div>
+                <ul>
+                    <li>Managed multiple DevOps teams across Israel, India, and Cyprus, including team leaders and engineers.</li>
+                    <li>Drove adoption of cloud-native platforms, scalable CI/CD pipelines, Infrastructure as Code, and automation.</li>
+                    <li>Introduced AI-assisted automation to streamline delivery and troubleshooting processes.</li>
+                    <li>Coached and mentored leaders and engineers, building strong technical ownership and career growth paths.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>DevOps Team Leader</h3>
+                <div class="meta">Amdocs &nbsp;·&nbsp; Apr 2018 – Mar 2022</div>
+                <ul>
+                    <li>Led automation initiatives across infrastructure and deployment systems to shorten delivery cycles.</li>
+                    <li>Designed and developed internal DevOps tools and infrastructure interfaces.</li>
+                    <li>Drove DevOps best practices and standardization across multiple environments.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Backend Scrum Master / Team Leader</h3>
+                <div class="meta">Amdocs &nbsp;·&nbsp; Mar 2017 – Jun 2018</div>
+                <ul>
+                    <li>Provided technical leadership, coaching, and mentorship across the full software development lifecycle.</li>
+                    <li>Led cross-functional communication with stakeholders and customers.</li>
+                    <li>Contributed hands-on to design, development, integration, and testing of complex software components.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Software Engineer</h3>
+                <div class="meta">Amdocs &nbsp;·&nbsp; Nov 2015 – Jun 2017</div>
+                <ul>
+                    <li>Designed, developed, and maintained backend software components.</li>
+                    <li>Investigated and resolved production and code-level issues.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Testing Engineer / QA</h3>
+                <div class="meta">Amdocs &amp; Qliqi &nbsp;·&nbsp; Jun 2013 – Oct 2015</div>
+                <ul>
+                    <li>Designed, developed, and executed automated and manual test suites using Selenium WebDriver.</li>
+                    <li>Managed defect lifecycle, regression testing, and data integrity validation with SQL.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills container">
+            <h2>Skills</h2>
+
+            <div class="skill-category">
+                <h3>Leadership &amp; Strategy</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">DevOps &amp; Platform Engineering Leadership</span>
+                    <span class="skill-tag">Global Team Leadership</span>
+                    <span class="skill-tag">Platform Strategy &amp; Ownership</span>
+                    <span class="skill-tag">Mentorship &amp; Coaching</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Infrastructure &amp; Orchestration</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Kubernetes (OCP, EKS, OpenStack)</span>
+                    <span class="skill-tag">Cloud-Native Architecture</span>
+                    <span class="skill-tag">Infrastructure as Code</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>CI/CD</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">ArgoCD</span>
+                    <span class="skill-tag">GitHub Actions</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Cloud</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Azure</span>
+                    <span class="skill-tag">GCP</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Data &amp; Streaming</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Kafka</span>
+                    <span class="skill-tag">Databricks</span>
+                    <span class="skill-tag">BigQuery</span>
+                    <span class="skill-tag">EMR</span>
+                    <span class="skill-tag">Snowflake</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Observability &amp; Reliability</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Elastic</span>
+                    <span class="skill-tag">SLI/SLO</span>
+                    <span class="skill-tag">Resilience Engineering</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>AI &amp; Automation</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">AI-Assisted Operations</span>
+                    <span class="skill-tag">AI-Driven Automation</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education container">
+            <h2>Education</h2>
+            <div class="edu-card">
+                <h3>B.Sc. Computer Engineering</h3>
+                <div class="meta">Ruppin Academic Center &nbsp;·&nbsp; 2010 – 2014</div>
+            </div>
         </section>
 
         <!-- Projects Section -->
@@ -269,9 +499,10 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Amit Rintzler</p>
+        <p>&copy; 2026 Amit Rintzler</p>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/amitrintzler/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/amit-rintzler" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/amitrintzler" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="https://twitter.com/AmitRintzler" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
